@@ -6,7 +6,6 @@
 }
 
 /* Barra adicional superior */
-
 .adicional {
     background-color: black;
     color: white;
@@ -16,43 +15,42 @@
 }
 
 /* HEADER */
-
 #header {
     display: flex;
-    background-color: rgb(172, 130, 92);
+    background-color: rgb(255, 255, 255);
     height: 90px;
     align-items: center; /* coloca a los elem. en el eje central horizontal */
-    /* position: sticky; */
+    position: sticky;
+    top: 0px;
 }
 
 /* LOGO */
-
 #header .header__logo{
    margin-left: 50px;
    margin-right: 25px;
 }
 
 #header .header__logo img {
-    height: 40px;
+    height: 70px;
 }
 
 /* LISTAS MENU */
-
 #header .header__menu {
     margin-left: 35px;
     margin-right: 35px;
     font-size: 12px;
     letter-spacing: 1px;
+    
 }
 
 #header .header__menu .inicio{
-    border-bottom: solid 1px black;
+    border-bottom: solid 1px #818181;
 }
 
 #header .header__menu ul li {
     display: inline-block; /* los coloca uno al lado del otro */
    position: relative; /* para que funcione menu desplegable */
-    padding: 10px;
+    margin: 10px;
 }
 
 #header .header__menu ul li a{
@@ -61,11 +59,10 @@
 }
 
 #header .header__menu ul li a:hover{
-    color: brown;
+    color: rgb(250, 127, 118);
 }
 
 /* menu desplegable */
-
 #header .header__menu ul ul{
     position: absolute;
     display: none; /* los oculta */
