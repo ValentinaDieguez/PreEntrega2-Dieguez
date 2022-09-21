@@ -1,0 +1,195 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Barra adicional superior */
+
+.adicional {
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    padding: 8px;
+}
+
+/* HEADER */
+
+#header {
+    display: flex;
+    background-color: rgb(172, 130, 92);
+    height: 90px;
+    align-items: center; /* coloca a los elem. en el eje central horizontal */
+    /* position: sticky; */
+}
+
+/* LOGO */
+
+#header .header__logo{
+   margin-left: 50px;
+   margin-right: 25px;
+}
+
+#header .header__logo img {
+    height: 40px;
+}
+
+/* LISTAS MENU */
+
+#header .header__menu {
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#header .header__menu .inicio{
+    border-bottom: solid 1px black;
+}
+
+#header .header__menu ul li {
+    display: inline-block; /* los coloca uno al lado del otro */
+   position: relative; /* para que funcione menu desplegable */
+    padding: 10px;
+}
+
+#header .header__menu ul li a{
+    color: black;
+    text-decoration: none; /* saca subrayado */
+}
+
+#header .header__menu ul li a:hover{
+    color: brown;
+}
+
+/* menu desplegable */
+
+#header .header__menu ul ul{
+    position: absolute;
+    display: none; /* los oculta */
+    background-color: rgb(255, 255, 255);
+    border: solid 1px black;
+    width: 200%;
+}
+
+#header .header__menu ul ul li{
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+    width: 120%;
+}
+
+#header .header__menu ul li:hover ul {
+    display: block;
+}
+
+/* FOOTER */
+
+#footer img{
+    height: 10px;
+}
+
+/* MAIN */
+
+#fondoImagen{
+    width: 100%;
+    height: 400px;
+    background-image: url(../img/fondo1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    font-style: oblique;
+}
+
+#fondoImagen .fondoImagen__fondoTransparente{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.315);
+    width: 100%;
+    height: 100%;
+}
+
+#fondoImagen .frase{
+    display: block;
+    letter-spacing: 2px;
+    font-size: 40px;
+    margin: 30px;
+    
+}
+
+#fondoImagen .slogan{
+    font-size: 20px;
+    display: block;
+    letter-spacing: 1px;
+}
+
+/* BANNER SERVICIOS */
+
+#banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#banner h6 {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 2px;
+}
+
+#banner p{
+    color: rgb(71, 71, 71);
+    font-size: 14px;
+}
+
+
+ /* SECCION PRODUCTOS */
+
+#productos{
+    background-color: rgb(245, 190, 145);
+    margin-top: 70px;
+    padding-bottom: 80px;
+}
+
+ #productos .productos__titulo{
+ text-align: center;
+ padding-top: 80px;
+ padding-bottom: 80px;
+ color: rgb(0, 0, 0);
+ }
+
+#productos .productos__imagenes{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+ }
+
+#productos img{
+    height: 400px;
+ }
+
+
+ /* playlist */
+
+ .musica__texto{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+ .musica__texto p{
+    padding-top: 10px;
+ }
+
+ #musica div{
+    display: inline;
+ }
