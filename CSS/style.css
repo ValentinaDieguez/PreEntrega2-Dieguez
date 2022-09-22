@@ -169,53 +169,113 @@
  /* LISTADO PRODUCTOS */
 
 #productos{
-    background-color: rgb(245, 190, 145);
+    /* background-color: rgb(233, 169, 140); */
     margin-top: 50px;
-    padding-bottom: 80px;
     padding-top: 50px;
+    padding-bottom: 30px;
     text-align: center;
 }
 
 #productos h2{
     padding-bottom: 30px;
-    color: white;
+    color: rgb(0, 0, 0);
+}
+
+#productos h2 a{
+    color: brown;
 }
 
 #productos .grid-container{
     display: grid;
     grid-template-columns: repeat(4,300px);
     grid-template-rows: repeat(2,300px);
-    /* background-color: aquamarine; */
     gap: 20px;
     margin: 20px;
     justify-content: center;
 }
 
-.grid__item--collar{
-    background-image: url('../img/collares.jpg');
-    background-size: cover;
-}
-
-#productos .grid-item{
-    background-color: coral;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 .grid__item--combo:nth-child(7){
     grid-column: 3/5;
 }
 
- #productos .productos__titulo{
- text-align: center;
- padding-top: 80px;
- padding-bottom: 80px;
- color: rgb(0, 0, 0);
- }
+.grid-item a:hover{
+    color: white;
+    font-size: 20px;
+}
 
+.grid__item--collar{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                  url('../img/collares.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--correa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                  url('../img/correas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.grid__item--pretal{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/pretales.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid__item--cinturon{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/pretales.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid__item--placa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/placas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid__item--taza{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/tazas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid__item--combo{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.247), rgba(0, 0, 0, 0.247)),
+                url('../img/tazas.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.grid-item a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
 
 
  /* playlist */
